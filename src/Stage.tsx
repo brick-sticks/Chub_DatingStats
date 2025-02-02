@@ -59,17 +59,17 @@ export class Stage extends StageBase<InitStateType, ChatStateType, MessageStateT
 
     clearStatMap() {
         return {
-            [Stat.Might]: 0,
-            [Stat.Grace]: 0,
-            [Stat.Skill]: 0,
-            [Stat.Brains]: 0,
-            [Stat.Wits]: 0,
-            [Stat.Charm]: 0,
-            [Stat.Heart]: 0,
-            [Stat.Luck]: 0
+            [Stat.Flirtation]: 0,
+            [Stat.Trickery]: 0,
+            [Stat.Empathy]: 0,
+            [Stat.Pressure]: 0,
+            [Stat.Expertise]: 0,
+            [Stat.Haggling]: 0,
+            [Stat.Athletics]: 0,
+            [Stat.Humor]: 0
         };
     }
-
+  
     async load(): Promise<Partial<LoadResponse<InitStateType, ChatStateType, MessageStateType>>> {
 
         try {
@@ -118,14 +118,14 @@ export class Stage extends StageBase<InitStateType, ChatStateType, MessageStateT
                 {"user": this.player.name, "char": promptForId ? this.characters[promptForId].name : ''});
 
             const statMapping:{[key: string]: string} = {
-                'hit, lift, endure, throw, wrestle, intimidate': 'Might',
-                'jump, dodge, balance, dance, land, sneak': 'Grace',
-                'craft, lock-pick, pickpocket, aim, repair': 'Skill',
-                'recall, memorize, solve, strategize, debate': 'Brains',
-                'adapt, quip, spot, trick, hide': 'Wits',
-                'persuade, deceive, entice, perform': 'Charm',
-                'resist, recover, empathize, comfort': 'Heart',
-                'gamble, hope, discover, guess': 'Luck',
+                'tempt, seduce, flatter, fawn, dote, compliment, tease, attract, charm, flirt': 'Flirtation',
+                'lie, cheat, deceive, manipulate, sneak, mislead, trick,': 'Trickery',
+                'console, comfort, help, soothe, reassure, sympathize, empathize': 'Empathy',
+                'intimidate, bluff, dare, scare, command, order, threaten, demand': 'Pressure',
+                'inspect, maneuver, perform, create, craft, finesse, method, technique, knowledge, expertise': 'Expertise',
+                'persuade, bargain, negotiate, compromise, offer, deal, exchange, trade, haggle': 'Haggling',
+                'attack, resist, run, jump, pound, force, grapple, wrestle, grab, endure, defend': 'Athletics',
+                'Joke, cheer, laugh, chuckle, giggle, prank, entertain': 'Humor',
                 'chat, rest, wait, idle': 'None'};
             let topStat: Stat|null = null;
             const statHypothesis = 'This narrator is attempting to {}, or do something similar.'
