@@ -1,21 +1,45 @@
 export enum Stat {
-    Might = 'Might',
-    Grace = 'Grace',
-    Skill = 'Skill',
-    Brains = 'Brains',
-    Wits = 'Wits',
-    Charm = 'Charm',
-    Heart = 'Heart',
-    Luck = 'Luck'
+    Flirtation = 'Flirtation',
+    Trickery = 'Trickery',
+    Empathy = 'Empathy',
+    Pressure = 'Pressure',
+    Expertise = 'Expertise',
+    Argument = 'Argument',
+    Humor = 'Humor',
+    Athletics = 'Athletics'
 }
 
 export const StatDescription: {[stat in Stat]: string} = {
-    [Stat.Might]: 'Physical power and endurance. Smash, lift, weather, intimidate.',
-    [Stat.Grace]: 'Agility and composure. Dodge, balance, dance, land.',
-    [Stat.Skill]: 'Sleight and craftmanship. Picklock, craft, shoot, fix, pickpocket.',
-    [Stat.Brains]: 'Knowledge and judgment. Solve, deduce, recall, plan.',
-    [Stat.Wits]: 'Instinct and awareness. React, notice, quip, trick.',
-    [Stat.Charm]: 'Allure and Influence. Persuade, inspire, deceive, entertain, impress.',
-    [Stat.Heart]: 'Determination and empathy. Resist, recover, connect, encourage, comfort.',
-    [Stat.Luck]: 'Spirit and fortune. Gamble, discover, coincide, hope.'
+    [Stat.Flirtation]: 'Sexual Temptation. Tease, Attract, Fawn, Dote, Flatter.',
+    [Stat.Trickery]: 'Lying and deception. Manipulate, Lie, Hide, Mislead.',
+    [Stat.Empathy]: 'Emotional compassion. Trust, Console, Encourage, Comfort, Love.',
+    [Stat.Pressure]: 'Dominance and intimidation. Control, Standoff, Threaten, Bluff.',
+    [Stat.Expertise]: 'Experience and skills. Maneuver, Inspect, Create.',
+    [Stat.Haggling]: 'Persuasive negotiation. Offer, Deal, Compromise, Exchange.',
+    [Stat.Athletics]: 'Physical ability. Attack, Pound, Endure, Resist.'
+    [Stat.Humor]: 'Wit and pleasantries. Joke, Laugh, Perform, Uplift.',
 }
+
+# Date Sim Stats
+    # Flirtation
+    # Trickery
+    # Empathy
+    # Pressure
+    # Expertise
+    # Haggling
+    # Athletics
+    # Humor
+
+# Sex Stats
+    # Endowment
+    # Stamina
+    # Finesse
+    # Roughness
+    # Tenderness
+    # Beauty
+
+# Kink-based Magic Ability
+    # Bondage
+    # Telepathy
+    # Beast Shift
+    # uhhh
